@@ -27,5 +27,11 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+#app{
+  width: 100%;
+}
+.container{
+  width: 780px;
+}
 
 </style>
