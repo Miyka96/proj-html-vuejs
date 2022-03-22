@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-
-    <!-- nav-bar
-         header-hero
+    <!-- header-hero
          section-about-me
          section-courses
          section-book_store
@@ -14,12 +12,20 @@
 </template>
 
 <script>
-
 export default {
-  
+
 }
+
+
+
 </script>
 
 <style lang="scss">
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 </style>
