@@ -23,7 +23,14 @@
       </nav>
       <!-- HERO -->
       <div class="hero">
-
+        <div class="hero-text">
+        <h5>i'm wingman</h5>
+        <h1>Peace On Earth <br/> A Wonderful Wish <br/> But No Way</h1>
+        <p>Succes isn't overnight. It's when everyday you get a little <br/> better than the day before. It all adds up. </p>
+        </div>
+        <div class="hero-img">
+        
+        </div>
       </div>
   </div>
 </div>
@@ -61,12 +68,12 @@
 
 .container{
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 
 .container-fluid{
-  height: 525px;
+  min-height: 525px;
   background-color: $bg-hero;
   background-image: url("../assets/img/background-pattern-wavify.png");
 }
@@ -74,7 +81,7 @@
 //NAV//
 
 nav{
-  height: 52px;
+  min-height: 52px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -83,15 +90,12 @@ nav{
 
 .logo, .social-links{
   width: 110px;
-  height: 100%;
   display: flex;
   align-items: center;
-  margin: 0 40px;
 }
 
 .nav-links{
   flex-grow: 1;
-  height: 100%;
 }
 #dark-logo{
   width: 100%;
@@ -100,12 +104,12 @@ nav{
 .nav-ul{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 20px;
-  height: 100%;
   font-family: $normal-text;
   font-size: 10px;
   flex-wrap: wrap;
+  margin: 0 40px;
 
   & li{
     cursor: pointer;
@@ -127,7 +131,6 @@ nav{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 100%;
   gap: 15px;
 
   & li{
@@ -144,6 +147,43 @@ nav{
 
 //HERO//
 
+.hero{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 450px;
+  width: 100%;
+}
+
+.hero-text, .hero-img {
+  height: 100%;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.hero-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: $dark-text;
+
+  & h5 {
+    font-family: $small-caps;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+  & h1 {
+    font-family: $elegant-title;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  & p {
+    font-family: $normal-text;
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+}
 
 
 
