@@ -1,8 +1,8 @@
 <template>
   <div id="app">
       <HeaderHero/>
-    <!-- section-about-me
-         section-courses
+      <AboutMe/>
+    <!-- section-courses
          section-book_store
          carousel-reviews
          section-blog
@@ -13,10 +13,14 @@
 <script>
 
 import HeaderHero from "./components/HeaderHero.vue";
+import AboutMe from "./components/AboutMe.vue";
+
+
 export default {
   name:"App",
   components: {
     HeaderHero,
+    AboutMe,
   },
 
 };
