@@ -54,5 +54,16 @@ img{
   display: flex;
   justify-content: center;
 }
+.btn{
+  background-color: $green-text;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 11px;
+  font-family: $normal-text;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 </style>

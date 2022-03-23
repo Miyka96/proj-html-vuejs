@@ -23,13 +23,18 @@
       </nav>
       <!-- HERO -->
       <div class="hero">
+
         <div class="hero-text">
         <h5>i'm wingman</h5>
         <h1>Peace On Earth <br/> A Wonderful Wish <br/> But No Way</h1>
         <p>Succes isn't overnight. It's when everyday you get a little <br/> better than the day before. It all adds up. </p>
+        <button class="btn">
+        Get Started For Free &#8594;
+        </button>
         </div>
+
         <div class="hero-img">
-        
+          <img src="../assets/img/home-movation-hero-image.png" alt="">
         </div>
       </div>
   </div>
@@ -182,6 +187,22 @@ nav{
     font-family: $normal-text;
     font-size: 12px;
     margin-bottom: 22px;
+  }
+}
+
+.hero-img{
+  background-image: url("../assets/img/home-movation-shape-face.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  
+
+  & img{
+    height: auto;
+    width: 88%;
+    position: absolute;
+    bottom: 0;
   }
 }
 
