@@ -127,7 +127,7 @@ export default {
   row-gap: 45px;
   gap: 15px;
 
-  & .card {
+  .card {
     min-height: 275px;
     width: 250px;
     display: flex;
@@ -135,55 +135,63 @@ export default {
     align-items: flex-start;
     justify-content: flex-start;
     font-family: $normal-text;
+    background-color: rgba(252, 252, 252, 0.884);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.15);
 
-    & .card-thumb {
+    .card-thumb {
       width: 100%;
       height: 152px;
 
-      & img {
+      img {
         width: 100%;
         height: 100%;
         border-radius: 3px;
       }
     }
 
-    & .card-text{
-        padding: 0 18px;
+    .card-text {
+      padding: 0 18px;
     }
 
-    & .card-price {
+    .card-price {
       color: $green-text;
       padding: 12px 0;
       font-weight: 800;
       font-size: 14px;
     }
 
-    & .card-title {
+    .card-title {
       color: $dark-text;
       font-weight: 600;
       font-size: 13px;
     }
 
-    & .card-description {
-        color: $grey-text;
-        font-size: 8px;
-        margin-top: 20px;
+    .card-description {
+      color: $grey-text;
+      font-size: 8px;
+      margin-top: 20px;
+      display: flex;
+
+      span {
+        padding-right: 15px;
+        font-weight: 600;
         display: flex;
 
-        & span{
-            padding-right: 15px;
-            font-weight: 600;
-            display: flex;
-
-                & img{
-                    height: 8px;
-                    width: 8px;
-                    margin-right: 5px;
-                    filter: invert(79%) sepia(14%) saturate(5%) hue-rotate(116deg) brightness(82%) contrast(92%);
-                }
-            
+        img {
+          height: 8px;
+          width: 8px;
+          margin-right: 5px;
+          filter: invert(79%) sepia(14%) saturate(5%) hue-rotate(116deg)
+            brightness(82%) contrast(92%);
         }
+      }
     }
+  }
+
+  & .card:hover {
+    background-color: white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
   }
 }
 </style>

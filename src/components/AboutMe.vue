@@ -203,10 +203,12 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 10px;
 
       & img{
         height: 46px;
         cursor: pointer;
+        border-radius: 10px;
       }
     }
   }
