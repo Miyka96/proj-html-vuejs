@@ -1,6 +1,7 @@
 <template>
   <section class="container-fluid">
     <div class="container">
+
       <!-- statistiche -->
       <div class="statistics">
         <ul class="stat-ul">
@@ -10,10 +11,34 @@
           </li>
         </ul>
       </div>
+
       <!-- about-me -->
-      <div class="about"></div>
+      <div class="about">
+        <div class="col-6">
+          <h4>about me</h4>
+          <h1>
+            How to Be an Alpha <br />
+            Male: The 15 Habits of <br />
+            True Alphas
+          </h1>
+        </div>
+        <div class="col-6">
+          <h3>
+            Want to learn how to be <span>an alpha male</span>? How to be more masculine?
+            How to be the man you've always wanted to be?
+          </h3>
+          <p>
+            Your goal is to show the consistency of business, core values, and customer care.
+            Punctuality, responsibility, individuality, accuracy, enthusiasm - you have to clearly
+            explain how these qualities are applicable to your work. And the important thing is you do love what you do.
+          </p>
+        </div>
+      </div>
+
       <!-- sezione con video -->
-      <div class="video-section"></div>
+      <div class="video-section">
+        
+      </div>
     </div>
   </section>
 </template>
@@ -47,6 +72,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 @import "../assets/scss/mixin.scss";
 
 .stat-ul {
@@ -77,7 +103,7 @@ export default {
     font-weight: 600;
   }
 
-  & .stat-title{
+  & .stat-title {
     font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -85,4 +111,61 @@ export default {
     color: $dark-text;
   }
 }
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  & .col-6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 168px;
+    flex-wrap: wrap;
+  }
+
+  & h4 {
+    font-family: $small-caps;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: $green-text;
+  }
+
+  & h1 {
+    font-family: $elegant-title;
+    margin: 15px 0;
+    color: $dark-text;
+    font-size: 24px;
+  }
+
+  & h3{
+    font-family: $normal-text;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+
+    & span{
+      color: $green-text;
+      font-weight: 700;
+    }
+  }
+
+  & p{
+    font-family: $normal-text;
+    color: $dark-text;
+    font-size: 9px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+}
+
+
 </style>

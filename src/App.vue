@@ -69,5 +69,7 @@ img{
   font-weight: 700;
   cursor: pointer;
 }
-
+.col-6{
+  width: 50%;
+}
 </style>
