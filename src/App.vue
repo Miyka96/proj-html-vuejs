@@ -2,8 +2,8 @@
   <div id="app">
       <HeaderHero/>
       <AboutMe/>
-    <!-- section-courses
-         section-book_store
+      <CoursesSection/>
+    <!-- section-book_store
          carousel-reviews
          section-blog
          footer-info -->
@@ -14,6 +14,7 @@
 
 import HeaderHero from "./components/HeaderHero.vue";
 import AboutMe from "./components/AboutMe.vue";
+import CoursesSection from "./components/CoursesSection.vue"
 
 
 export default {
@@ -21,6 +22,7 @@ export default {
   components: {
     HeaderHero,
     AboutMe,
+    CoursesSection,
   },
 
 };
