@@ -3,8 +3,8 @@
       <HeaderHero/>
       <AboutMe/>
       <CoursesSection/>
-    <!-- section-book_store
-         carousel-reviews
+      <BookStore/>
+    <!-- carousel-reviews
          section-blog
          footer-info -->
   </div>
@@ -14,7 +14,8 @@
 
 import HeaderHero from "./components/HeaderHero.vue";
 import AboutMe from "./components/AboutMe.vue";
-import CoursesSection from "./components/CoursesSection.vue"
+import CoursesSection from "./components/CoursesSection.vue";
+import BookStore from "./components/BookStore.vue"
 
 
 export default {
@@ -23,6 +24,7 @@ export default {
     HeaderHero,
     AboutMe,
     CoursesSection,
+    BookStore,
   },
 
 };

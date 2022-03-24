@@ -206,6 +206,7 @@ export default {
 
       & img{
         height: 46px;
+        cursor: pointer;
       }
     }
   }
