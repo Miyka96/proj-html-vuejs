@@ -37,7 +37,25 @@
 
       <!-- sezione con video -->
       <div class="video-section">
-        
+        <div class="col-7">
+          <div class="video-wrapper">
+              <img src="../assets/img/icon-youtube-play.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-5">
+          <h3>
+            "Every morning you have two choices: continue to sleep with 
+            your dreams, or wake up and chase them."
+          </h3>
+          <img src="../assets/img/home-movation-shape-01.png" alt="">
+          <h5>
+            Kaixa Stark
+          </h5>
+          <p>
+            wingman
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -164,6 +182,61 @@ export default {
     font-size: 9px;
     line-height: 16px;
     font-weight: 500;
+  }
+}
+
+.video-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  & .col-7{
+    width: 55%;
+
+    & .video-wrapper{
+      height: 280px;
+      width: 100%;
+      background-image: url("../assets/img/home-movation-video-poster-670x450.jpg");
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img{
+        height: 46px;
+      }
+    }
+  }
+
+  & .col-5{
+    width: 45%;
+    padding: 0 50px;
+
+    & h3{
+      font-size: 16px;
+      line-height: 30px ;
+      color: $dark-text;
+      font-family: $elegant-title;
+      margin-bottom: 30px;
+    }
+
+    & h5{
+      margin: 20px 0;
+      font-size: 15px;
+      font-family: $normal-text;
+      font-weight: 800;
+    }
+
+    & p{
+      text-transform: uppercase;
+      font-family: $small-caps;
+      font-size: 10px;
+      color: $dark-text;
+      letter-spacing: 0.5px;
+      
+    }
   }
 }
 
