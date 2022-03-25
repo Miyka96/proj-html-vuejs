@@ -32,12 +32,8 @@
               </ul>
             </div>
             <div class="card-description">
-              <div class="card-title">
-                Alpha man by Maxcoach
-              </div>
-              <div class="card-price">
-                $29.00
-              </div>
+              <div class="card-title">Alpha man by Maxcoach</div>
+              <div class="card-price">$29.00</div>
             </div>
           </div>
         </div>
@@ -54,16 +50,18 @@
               </ul>
             </div>
             <div class="card-description">
-              <div class="card-title">
-                Real man 4.0 by Maxcoach
-              </div>
-              <div class="card-price">
-                $39.00
-              </div>
+              <div class="card-title">Real man 4.0 by Maxcoach</div>
+              <div class="card-price">$39.00</div>
             </div>
           </div>
         </div>
       </div>
+
+      <ul class="logo-wrapper">
+        <li class="logo-items" v-for="(el, i) in logo" :key="i">
+          <img :src="el.img" />
+        </li>
+      </ul>
     </section>
   </div>
 </template>
@@ -72,7 +70,16 @@
 export default {
   name: "BookStore",
   data() {
-    return {};
+    return {
+      logo: [
+        { img: require(`../assets/img/client-logo-05-primary.png`) },
+        { img: require(`../assets/img/client-logo-06-primary.png`) },
+        { img: require(`../assets/img/client-logo-07-primary.png`) },
+        { img: require(`../assets/img/client-logo-04-primary.png`) },
+        { img: require(`../assets/img/client-logo-03-primary.png`) },
+        { img: require(`../assets/img/client-logo-02-primary.png`) },
+      ],
+    };
   },
 };
 </script>
@@ -239,12 +246,38 @@ export default {
     font-size: 11px;
   }
 
-  .card-description{
+  .card-description {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: $normal-text;
+  }
+
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+
+    .logo-items {
+      width: 90px;
+      max-height: 100px;
+
+      & img {
+        width: 100%;
+        object-fit: contain;
+        filter: invert(74%) sepia(5%) saturate(0%) hue-rotate(249deg) brightness(92%) contrast(81%);
+        opacity: 0.3;
+      }
+    }
+    .logo-items:last-child {
+      width: 55px;
+    }
   }
 }
 </style>
