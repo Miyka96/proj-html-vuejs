@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-      <HeaderHero/>
-      <AboutMe/>
-      <CoursesSection/>
-      <BookStore/>
+    <HeaderHero />
+    <AboutMe />
+    <CoursesSection />
+    <BookStore />
     <!-- carousel-reviews
          section-blog
          footer-info -->
@@ -11,24 +11,20 @@
 </template>
 
 <script>
-
 import HeaderHero from "./components/HeaderHero.vue";
 import AboutMe from "./components/AboutMe.vue";
 import CoursesSection from "./components/CoursesSection.vue";
-import BookStore from "./components/BookStore.vue"
-
+import BookStore from "./components/BookStore.vue";
 
 export default {
-  name:"App",
+  name: "App",
   components: {
     HeaderHero,
     AboutMe,
     CoursesSection,
     BookStore,
   },
-
 };
-
 </script>
 
 <style lang="scss">
@@ -72,8 +68,13 @@ img{
   font-family: $normal-text;
   font-weight: 700;
   cursor: pointer;
+
+  &:hover{
+    background-color: #3F3A64;
+  }
 }
 .col-6{
   width: 50%;
 }
+
 </style>

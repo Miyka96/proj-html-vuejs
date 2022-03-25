@@ -115,6 +115,14 @@ export default {
   font-family: $small-caps;
   flex-grow: 1;
 
+  &:hover{
+    .stat-title{
+      text-decoration: underline;
+      text-decoration-color: $green-text;
+      text-decoration-thickness: 2px;
+    }
+  }
+
   & .stat-num {
     font-size: 21px;
     color: $green-text;

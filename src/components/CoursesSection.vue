@@ -138,6 +138,7 @@ export default {
     background-color: rgba(252, 252, 252, 0.884);
     border-radius: 5px;
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 
     .card-thumb {
       width: 100%;

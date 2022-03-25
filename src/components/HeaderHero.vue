@@ -50,13 +50,13 @@
         <img src="../assets/icons/school-triangle-svgrepo-com.svg" alt="" />
       </div>
       <div class="sidebar-icon">
-        <img src="../assets/icons/circle-my-custom-svg.svg" alt="">
+        <img src="../assets/icons/circle-my-custom-svg.svg" alt="" />
       </div>
       <div class="sidebar-icon">
-        <img src="../assets/icons/book-solid.svg" alt="">
+        <img src="../assets/icons/book-solid.svg" alt="" />
       </div>
       <div class="sidebar-icon">
-        <img src="../assets/icons/cart-shopping-solid.svg" alt="">
+        <img src="../assets/icons/cart-shopping-solid.svg" alt="" />
       </div>
     </div>
   </div>
@@ -136,6 +136,10 @@ nav {
     display: flex;
     align-items: center;
     gap: 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &::after {
       content: url("../assets/icons/chevron-down-solid.svg");
