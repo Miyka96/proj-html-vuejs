@@ -4,8 +4,8 @@
     <AboutMe />
     <CoursesSection />
     <BookStore />
-    <!-- carousel-reviews
-         section-blog
+    <CarouselReviews />
+    <!-- section-blog
          footer-info -->
   </div>
 </template>
@@ -15,6 +15,7 @@ import HeaderHero from "./components/HeaderHero.vue";
 import AboutMe from "./components/AboutMe.vue";
 import CoursesSection from "./components/CoursesSection.vue";
 import BookStore from "./components/BookStore.vue";
+import CarouselReviews from "./components/CarouselReviews.vue"
 
 export default {
   name: "App",
@@ -23,6 +24,7 @@ export default {
     AboutMe,
     CoursesSection,
     BookStore,
+    CarouselReviews,
   },
 };
 </script>
