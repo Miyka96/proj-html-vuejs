@@ -82,6 +82,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/mixin.scss";
 
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +111,7 @@ nav {
   width: 110px;
   display: flex;
   align-items: center;
+  padding: 20px 0;
 }
 
 .nav-links {
@@ -249,6 +251,22 @@ nav {
 
     & img {
       height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:665px){
+  nav{
+    flex-direction: column;
+  }
+  .hero-img{
+    display:none;
+  }
+  .hero-text{
+    justify-content: center;
+    align-items:center;
+    & h1{
+      text-align: center;
     }
   }
 }

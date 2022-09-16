@@ -280,4 +280,25 @@ export default {
     }
   }
 }
+
+.container{
+  flex-direction: column;
+
+  .col-5, .col-7{
+    width: 100%;
+    padding: 0 20px;
+    &>*{
+      text-align: center;
+    }
+    .btn{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+.card-thumb,.card-thumb2{
+  background-size: cover;
+  background-position: center;
+}
+}
 </style>

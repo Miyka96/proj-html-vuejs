@@ -208,6 +208,7 @@ export default {
       width: 100%;
       background-image: url("../assets/img/home-movation-video-poster-670x450.jpg");
       background-size: cover;
+      background-position: center;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -247,6 +248,33 @@ export default {
       color: $dark-text;
       letter-spacing: 0.5px;
       
+    }
+  }
+}
+
+@media screen and (max-width:665px){
+  .about{
+    flex-direction: column;
+    .col-6{
+      width: 100%;
+      padding: 0 20px;
+      justify-content: center;
+      align-items: center;
+      &>*{
+        text-align: center;
+      }
+    }
+  }
+  .video-section{
+    flex-direction: column;
+    .col-7{
+      width: 100%;
+      padding: 0 20px;
+    }
+    .col-5{
+      width: 100%;
+      padding: 0 20px;
+      margin: 20px 0;
     }
   }
 }
